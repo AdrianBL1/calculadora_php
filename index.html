@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+	<link rel="icon" type="image/x-icon" href="calculadora_icon.ico">
+	<link rel="stylesheet" href="index.css">
+	<script src="calculadoraUI.js"></script>
+	<script src="calculadora.js"></script>
+	<script src="ajax.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Calculadora</h1>
+	</header>
+	<nav>
+		<input type="text" id="entrada">
+		<div class="dobleColumna">
+			<input type="button" id="calcular" value="Calcular">
+			<button type="button" id="limpiar" value="">Limpiar</button>
+		</div>
+	</nav>
+	<form method="get" action="PHP/servicios.php">
+		<div id="main-contenedor">
+			<div id="notificacion" class="toast"></div>
+			<main>
+				<article class="itemMain">
+					<input type="button" id="uno" value="1">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="dos" value="2">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="tres" value="3">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="cuatro" value="4">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="cinco" value="5">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="seis" value="6">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="siete" value="7">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="ocho" value="8">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="nueve" value="9">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="decimal" value=".">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="cero" value="0">
+				</article>
+				<article class="itemMain">
+					<input type="button" id="limpiar2" value="C">
+				</article>
+			</main>
+			<aside>
+				<article class="itemAside">
+					<input type="button" id="sumar" value="+">
+				</article>
+				<article class="itemAside">
+					<input type="button" id="restar" value="-">
+				</article>
+				<article class="itemAside">
+					<input type="button" id="multiplicar" value="*">
+				</article>
+				<article class="itemAside">
+					<input type="button" id="dividir" value="/">
+				</article>
+			</aside>
+			<input type="hidden" id="datos" name="datos">
+		</div>
+	</form>
+	</div>
+	<footer>Proyecto Académico de Desarrollo Web. Adrian BL</footer>
+</body>
+
+</html>
