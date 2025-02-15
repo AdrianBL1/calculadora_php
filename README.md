@@ -46,7 +46,7 @@ master/
 
 1. Clona el repositorio en tu máquina local.
    ```sh
-   git clone https://github.com/tu_usuario/calculadora_php.git
+   git clone https://github.com/adrianbl1/calculadora_php.git
    ```
 2. Navega al directorio del proyecto.
    ```sh
